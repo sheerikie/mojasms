@@ -19,7 +19,7 @@ class CreateSMSTable extends Migration
             $table->string('content');
             $table->string('recipient');
             $table->integer('delivery_status')->default(0);
-            $table->string('delivery_time');
+            $table->string('delivery_time')->nullable();
             $table->timestamps();
         });
     }
